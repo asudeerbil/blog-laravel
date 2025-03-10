@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ContactMail extends Mailable
+class ContactMail extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
@@ -21,12 +21,12 @@ class ContactMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct($name,$email,$topic,$messageContent)
+    public function __construct($name, $email, $topic, $messageContent)
     {
-        $this->name=$name;
-        $this->email=$email;
-        $this->topic=$topic;
-        $this->messageContent=$messageContent;
+        $this->name = $name;
+        $this->email = $email;
+        $this->topic = $topic;
+        $this->messageContent = $messageContent;
     }
 
     /**
@@ -46,11 +46,11 @@ class ContactMail extends Mailable
     {
         return new Content(
             view: 'emails.contact',
-            with:[
-                'name'=>$this->name,
-                'email'=>$this->email,
-                'topic'=>$this->topic,
-                'messageContent'=>$this->messageContent,
+            with: [
+                'name' => $this->name,
+                'email' => $this->email,
+                'topic' => $this->topic,
+                'messageContent' => $this->messageContent,
 
             ],
         );

@@ -1,5 +1,5 @@
 @if(Route::currentRouteName() !== 'about')
-    @include('front.layouts.header')
+@include('front.layouts.header')
 @endif
 
 @yield('content')

@@ -11,18 +11,19 @@ use App\Models\Admin;
 
 class DashboardController extends Controller
 {
-    public function index(){
-        $articles=Article::all()->count();
-        $hit=Article::sum('hit');
-        $category=Category::all()->count();
-        $iw=Page::all()->count();
-        
+    public function index()
+    {
+        $articles = Article::all()->count();
+        $hit = Article::sum('hit');
+        $category = Category::all()->count();
+        $iw = Page::all()->count();
 
-        return view('back.dashboard',compact('articles','hit','category','iw'));
 
+        return view('back.dashboard', compact('articles', 'hit', 'category', 'iw'));
     }
-    public function welcome(){
-        $admin=Admin::first();
-        return view('back.welcome',compact('admin'));
+    public function welcome()
+    {
+        $admin = Admin::first();
+        return view('back.welcome', compact('admin'));
     }
 }

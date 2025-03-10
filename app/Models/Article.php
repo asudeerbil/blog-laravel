@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models;
+
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,7 +17,8 @@ class Article extends Model
         'slug',
     ];
 
-    public function getCategory(){
-        return $this->belongsTo(Category::class,'category_id');
+    public function getCategory()
+    {
+        return $this->belongsTo(Category::class, 'category_id');
     }
 }
