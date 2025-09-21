@@ -7,7 +7,7 @@ The application provides a **modern responsive user interface** powered by **Tai
 
 ---
 
-## ✨ Features
+## Features
 
 - **Post Management (CRUD)**  
   - Create, read, update, and delete blog posts with validation rules.  
@@ -36,7 +36,7 @@ The application provides a **modern responsive user interface** powered by **Tai
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 - **Backend Framework**: [Laravel](https://laravel.com/) – Routing, Controllers, Middleware, Validation, Config Management  
 - **Templating Engine**: [Blade](https://laravel.com/docs/blade) – Layouts, Sections, Partials, Reusable Components  
