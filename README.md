@@ -13,7 +13,10 @@ The application provides a **modern responsive user interface** powered by **Tai
   - Create, read, update, and delete blog posts with validation rules.  
   - Automatic slug generation for SEO-friendly URLs.  
 - **Categories & Tags (Optional)**  
-  - Organize posts into categories and add tags for easier navigation.  
+  - Organize posts into categories and add tags for easier navigation.
+- **Comments & Questions**  
+  - Visitors can leave comments or questions on posts.  
+  - **Automatic email notifications sent to admin’s email** when a new comment/question is submitted.    
 - **Search & Filtering**  
   - Search by post title or content, filter by category or tag.  
 - **Pagination**  
@@ -40,7 +43,8 @@ The application provides a **modern responsive user interface** powered by **Tai
 
 - **Backend Framework**: [Laravel](https://laravel.com/) – Routing, Controllers, Middleware, Validation, Config Management  
 - **Templating Engine**: [Blade](https://laravel.com/docs/blade) – Layouts, Sections, Partials, Reusable Components  
-- **ORM / Database Layer**: [Eloquent ORM](https://laravel.com/docs/eloquent) – Models, Relationships, Query Builder, Pagination  
+- **ORM / Database Layer**: [Eloquent ORM](https://laravel.com/docs/eloquent) – Models, Relationships, Query Builder, Pagination
+- **Mail System** — Laravel’s Mail API to send notifications to admin for comments/questions    
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) – Utility-first responsive design, custom configs in `tailwind.config.js`  
 - **Build Tools**: [Vite](https://vitejs.dev/) + npm – Asset bundling, hot reload, production builds  
 - **Database**: MySQL / SQLite – with Migrations & Seeders for schema and sample data  
